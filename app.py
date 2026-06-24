@@ -10,7 +10,7 @@ import os
 
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-model_heart = pickle.load(open(os.path.join(BASE_DIR, 'model/Hasilgenerate.pkl'), 'rb'))
+model_heart = pickle.load(open(os.path.join(BASE_DIR, 'Model/Hasilgenerate.pkl'), 'rb'))
 
 st.set_page_config(page_title="Health Prediction App", page_icon="❤️", layout="centered")
 
