@@ -171,7 +171,7 @@ def iris():
 
     if st.sidebar.button('Predict!'):
         # ✅ Sekarang input_df selalu ada, tidak akan error
-        loaded_model = pickle.load(open(os.path.join(BASE_DIR, 'model_iris.pkl'), 'rb'))
+        loaded_model = pickle.load(open(os.path.join(BASE_DIR, 'Model/model_iris.pkl'), 'rb'))
         prediction = loaded_model.predict(input_df)
         st.subheader('Prediction:')
         if prediction[0] == 0:
