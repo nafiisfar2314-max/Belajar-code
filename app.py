@@ -125,7 +125,7 @@ def predict_heart_disease():
             else:
                 st.success("The model predicts that you are not at risk of heart disease. Keep up with a healthy lifestyle!")
 
-with open("iris.pkl", 'rb') as file:  
+with open("Model/iris.pkl", 'rb') as file:  
  loaded_model = pickle.load(file)
 
 st.set_page_config(page_title="Halaman Modelling", layout="wide")
@@ -138,7 +138,7 @@ def iris():
         Data obtained from the [iris dataset](https://www.kaggle.com/uciml/iris) by UCIML. 
         """)
 
-    img = Image.open(os.path.join(BASE_DIR, "iris.jpg"))
+    img = Image.open(os.path.join(BASE_DIR, "public/iris.jpg"))
     st.image(img, width=500)
 
     st.sidebar.header('Input Manual')
