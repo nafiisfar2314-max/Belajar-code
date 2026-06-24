@@ -173,6 +173,8 @@ def iris():
         # ✅ Sekarang input_df selalu ada, tidak akan error
         loaded_model = pickle.load(open(os.path.join(BASE_DIR, 'Model/model_iris.pkl'), 'rb'))
         prediction = loaded_model.predict(input_df)
+        with st.spinner('Wait for it...'):
+            time.sleep(4)   
         st.subheader('Prediction:')
         if prediction[0] == 0:
             st.success("🌸 Iris-setosa")          # ✅ Hijau
@@ -181,9 +183,7 @@ def iris():
         else:
             st.error("🌺 Iris-virginica")         # ❌ Merah
         output = str(prediction[0])
-        with st.spinner('Wait for it...'):
-            time.sleep(4)
-            st.success(f"Prediction of this app is {output}")      
+        
     
 
 
