@@ -24,17 +24,19 @@ def predict_heart_disease():
     st.image("public/heart-disease.jpg", caption="Heart Disease Prediction", use_container_width=True)
 
     st.sidebar.header("Input Parameters:")
-    st.sidebar.markdown("""Please enter the following health parameters to predict the likelihood of heart disease.
-    - Age: Age of the patient in years.
-    - Sex: Gender of the patient (1= male, 2=female)
-    - Chest Pain Type: Type of chest pain experienced by the patient (1=typical angina, 2=atypical angina, 3=non-anginal pain, 4=asymptomatic)
-    - thalium stress test (1=normal, 2=fixed defect, 3=reversible defect)
-    - Exercise induced angina (1=yes, 0=no)
-    - oldpeak: ST depression induced by exercise relative to rest
-    - slope: the slope of the peak exercise ST segment (1=upsloping, 2=flat, 3=downsloping)
-    - Number of major vessels (0-3) colored by flourosopy
-    - Maximum heart rate achieved: Maximum heart rate achieved during the test            
-                        """)
+    st.sidebar.markdown("""
+Please enter the following health parameters to predict the likelihood of heart disease.
+
+- **Age:** Age of the patient in years.
+- **Sex:** Gender of the patient (1= male, 2=female)
+- **Chest Pain Type:** Type of chest pain (1=typical angina, 2=atypical angina, 3=non-anginal pain, 4=asymptomatic)
+- **Thalium Stress Test:** (1=normal, 2=fixed defect, 3=reversible defect)
+- **Exercise Induced Angina:** (1=yes, 0=no)
+- **Oldpeak:** ST depression induced by exercise relative to rest
+- **Slope:** Peak exercise ST segment (1=upsloping, 2=flat, 3=downsloping)
+- **Major Vessels:** Number of major vessels (0-3) colored by flourosopy
+- **Max Heart Rate:** Maximum heart rate achieved during the test
+""")
 
     cp = st.sidebar.selectbox("Chest Pain Type", [0, 1, 2, 3,])
     if cp == 0:
