@@ -21,7 +21,7 @@ def predict_heart_disease():
     Data obtained from the UCI Machine Learning Repository: [Heart Disease Dataset](https://archive.ics.uci.edu/ml/datasets/heart+Disease)
                 """)
 
-    st.image("heart-disease.jpg", caption="Heart Disease Prediction", use_container_width=True)
+    st.image("public/heart-disease.jpg", caption="Heart Disease Prediction", use_container_width=True)
 
     st.sidebar.header("Input Parameters:")
     st.sidebar.markdown("""Please enter the following health parameters to predict the likelihood of heart disease.
