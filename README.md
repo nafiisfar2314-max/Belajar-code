@@ -7,7 +7,7 @@ multi-halaman berisi model:
    berdasarkan 9 fitur klinis (model Random Forest, tuned via
    GridSearchCV 5-fold CV, ROC-AUC 0.91, dataset DQLab).
 
-**Demo:** https://belajar-code-bh99xnpsruubztbtjxqsgq.streamlit.app/
+**Demo:** https://belajar-code.streamlit.app
 
 ## Struktur
 - `app.py` — entry point aplikasi Streamlit
